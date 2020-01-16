@@ -24,5 +24,13 @@ namespace StudentList.Tests
             Assert.IsType(typeof(string[]), actual);
             Assert.True(actual.Length == 3);
         }
+
+        [Fact]
+        public void ReturnCorrectStudentCount()
+        {
+            var sut = new StudentManager(mockStorage.Object);
+            var actual = sut.CountStudents();
+            Assert.True(actual == 3);
+        }
     }
 }

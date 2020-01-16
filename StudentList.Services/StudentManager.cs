@@ -18,7 +18,12 @@ namespace StudentList.Services
         {
             var studentList = _studentStorage.LoadStudentsList();
             return studentList.Split(',');
-            // throw new NotImplementedException(" Run tests ");
+        }
+
+        public int CountStudents()
+        {
+            var studentList = _studentStorage.LoadStudentsList();
+            return studentList.Split(',').Length;        
         }
     }
 }
