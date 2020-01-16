@@ -9,10 +9,10 @@ namespace StudentList
         internal const string ShowAll  = "-a";
 
         /// Command line argument to show a random student from the list.
-        internal const string ShowRandom  = "-r";
+        internal const string ShowRandom  = "-ra";
 
         /// Command line argument to display a count of the number of students in the list.
-        internal const string ShowCount = "-c";
+        internal const string ShowCount = "-co";
 
         /// Command line argument to find a student in the list.
         internal const string FindEntry = "?";
