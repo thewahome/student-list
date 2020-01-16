@@ -25,6 +25,13 @@ namespace StudentList.Services
 
         }
 
+        public StudentManager()
+        {
+            _studentStorage = new StudentStorage();
+            _rand = new Random();
+            _studentList = _studentStorage.LoadStudentsList();
+        }
+
         public string PickRandomStudent() 
         {
             var randomIndex = _rand.Next(0, this.Students.Length-1);

@@ -1,4 +1,4 @@
-namespace dev275x.studentlist
+namespace StudentList
 {
     static class Constants
     {
